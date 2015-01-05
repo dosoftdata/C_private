@@ -15,15 +15,13 @@
         <div class="row homemostviewed">
             <div class="container">
                 <div class="row">
+                    hhhh
+                </div>
+                <div class="row">
                     <div id="idms-widget-carousel" class="carousel slide">    
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li id="home-image-slide-modal-control-0" data-target="#idms-widget-carousel" data-slide-to="0" class="active"></li>
-                            <li id="home-image-slide-modal-control-1" data-target="#idms-widget-carouselc" data-slide-to="1" class="active"></li>
-                            <li id="home-image-slide-modal-control-2"data-target="#idms-widget-carousel" data-slide-to="2"></li>
-                        </ol>
-                        <!-- Wrapper for slides -->
-                        <ul class="carousel-inner">   
+                        
+                        <center>
+                        <ul class="carousel-inner border-blue" style="border: 5px solid red; width: 80%; border: none;">   
                             <li class="item active" class="" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
                                 <a type="button" class=" col-md-4 btn home-image-slide-modal-0 item-content" data-toggle="modal-popover" data-target="#home-image-slide-modal-0"
                                    href="#home-image-slide-modal-0">
@@ -55,6 +53,13 @@
                                 </a>
                             </li>
                         </ul>
+                            </center>
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li id="home-image-slide-modal-control-0" data-target="#idms-widget-carousel" data-slide-to="0" class="active"></li>
+                            <li id="home-image-slide-modal-control-1" data-target="#idms-widget-carouselc" data-slide-to="1" class="active"></li>
+                            <li id="home-image-slide-modal-control-2"data-target="#idms-widget-carousel" data-slide-to="2"></li>
+                        </ol>
                         <!--Image slide Popped-->
                         <div id="home-image-slide-modal-0" class="idms-slide-popover col-md-4 ">
                             <img src="http://placehold.it/1200x315" alt="..." class="img-responsive"> 
@@ -66,11 +71,11 @@
                             <img src="http://placehold.it/200x200" alt="..." class="img-responsive"> 
                         </div>
                         <!-- Controls -->
-
-                        <a  id="idms-slide-left" class="left carousel-control border-blue" href="#left" role="button" data-slide="prev">
+                     
+                        <a  id="idms-slide-left" class="left carousel-control" href="#left" role="button" data-slide="prev">
                             <span  class="glyphicon glyphicon-chevron-left"></span>
                         </a>
-                        <a  id="idms-slide-right"  class="right carousel-control border-blue" href="#right" role="button" data-slide="next">
+                        <a  id="idms-slide-right"  class="right carousel-control " href="#right" role="button" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                         </a>
                     </div> <!-- Carousel -->

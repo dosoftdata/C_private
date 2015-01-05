@@ -26,7 +26,6 @@
             <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
             <link rel="icon" type="image/x-icon" href="/favicon.ico">
              <script>if ( window != window.top ) { document.documentElement.style.minHeight = "768px"; }</script>
-
         </head>
         <body>
             <?php /*
