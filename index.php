@@ -21,7 +21,7 @@
                     <div id="idms-widget-carousel" class="carousel slide">    
                         
                         <center>
-                        <ul class="carousel-inner border-blue" style="border: 5px solid red; width: 80%; border: none;">   
+                        <ul class="carousel-inner border-blue" style="width: 80%;">   
                             <li class="item active" class="" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
                                 <a type="button" class=" col-md-4 btn home-image-slide-modal-0 item-content" data-toggle="modal-popover" data-target="#home-image-slide-modal-0"
                                    href="#home-image-slide-modal-0">
@@ -73,10 +73,10 @@
                         <!-- Controls -->
                      
                         <a  id="idms-slide-left" class="left carousel-control" href="#left" role="button" data-slide="prev">
-                            <span  class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
+                            <img class="chevron chevron-right img-responsive" src="images/carousel/arrows/idms-carousel-chevron-left.png" />
+  
                         <a  id="idms-slide-right"  class="right carousel-control " href="#right" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                <img class="chevron chevron-right img-responsive" src="images/carousel/arrows/idms-carousel-chevron-right.png" />
                         </a>
                     </div> <!-- Carousel -->
                 </div>

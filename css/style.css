@@ -1750,6 +1750,25 @@ ul.carousel-inner>li.item > a >img{
 .carousel-indicators{
     top: 95%;
 }
+.carousel-control .chevron-left,
+.carousel-control .chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.carousel-control .chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+#idms-slide-left > img,
+#idms-slide-right > img{
+    
+}
 .idms-slide-popover {
   position: absolute;
   top: 7%;
