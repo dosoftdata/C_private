@@ -80,14 +80,14 @@
 				</div>
 				<div class="popover-content">
                                     <ul class="quick-finder-content" style="display: block; z-index: 1060">
-                                        <li><span class="quick-find-tag-title"> Find Widget by tag...</span></li>
+                                        <li style="padding: 10px 0 5px 0"><span class="quick-find-tag-title"> Find Widget by tag...</span></li>
                                         <li>
-                                            <div class="row zeropadding">
-                                                <div class="col-xs-12 col-md-9 zeropadding" style="height:30px">
+                                            <div class="row zeropadding tag-control" style="padding: 0">
+                                                <div class="col-xs-12 col-md-9 zeropadding" style="height:30px;">
                                                     <dl id="by-tag-quick-find" class="quick-find-tag find-by-tag">
                                                         <dt><a href="#"><span style="padding-left: 5px">select</span></a></dt>
                                                         <dd>
-                                                            <ul class="select-item">
+                                                            <ul class="quick-find-tag-select-item">
                                                                 <li><a href="#">Brazil<span class="value">BR</span></a></li>
                                                                 <li><a href="#">France<span class="value">FR</span></a></li>
                                                                 <li><a href="#">Germany<span class="value">DE</span></a></li>
@@ -101,19 +101,24 @@
                                                     </dl>
                           
                                                 </div>
-                                                <div class="col-xs-6 col-md-3 zeropadding">
-                                                Find
+                                                <div class="col-xs-6 col-md-3 size-screen-control">
+                                                    <div class="quick-find-button-tag">
+                                                        <span role="button" class="btn center-block" style="">
+                                                         Find 
+                                                         </span>
+                                                    </div>
+                                               
                                                 </div>
                                             </div>
                                         </li>
-                                        <li> <span class="quick-find-tag-title"> --or in alphabetical order</span></li>
+                                        <li style="padding: 10px 0 5px 0"> <span class="quick-find-by-alpha-title"> --or in alphabetical order</span></li>
                                         <li>
-                                            <div class="row">
+                                            <div class="row alpha-control">
                                                 <div class="col-xs-12 col-md-9 zeropadding">
-                                                     <dl id="by-tag-quick-find" class="quick-find-tag find-by-alpha">
+                                                     <dl id="by-alpha-quick-find" class="quick-find-by-alpha find-by-alpha">
                                                         <dt><a href="#"><span style="padding-left: 5px">select</span></a></dt>
                                                         <dd>
-                                                            <ul class="select-item">
+                                                            <ul class="quick-find-by-alpha-select-item">
                                                                 <li><a href="#">Brazil<span class="value">BR</span></a></li>
                                                                 <li><a href="#">France<span class="value">FR</span></a></li>
                                                                 <li><a href="#">Germany<span class="value">DE</span></a></li>
@@ -126,8 +131,13 @@
                                                         </dd>
                                                     </dl>
                                                 </div>
-                                                <div class="col-xs-6 col-md-3 zeropadding">
-                                                    Find
+                                                <div class="col-xs-6 col-md-3 size-screen-control">
+                                                     <div class="quick-find-button-tag">
+                                                         <span role="button" class=" btn center-block" style="">
+                                                         Find
+                                                         </span>
+                                                    </div>
+                                               
                                                 </div>
                                             </div>
                                         </li>

@@ -210,15 +210,16 @@ $(function () {
 });
 //
 $(function () {
-    $(".quick-find-tag img.flag").addClass("flagvisibility");
+    //
     $(".quick-find-tag dt a").click(function () {
         $(".quick-find-tag dd ul").toggle();
+        ///alert('here');
     });
     $(".quick-find-tag dd ul li a").click(function () {
         var text = $(this).html();
         $(".quick-find-tag dt a span").html(text);
         $(".quick-find-tag dd ul").hide();
-       /// $("#result").html("Selected value is: " + getSelectedValue("sample"));
+       /// $("#result").html("Selected value is: " + getSelectedValue("by-tag-quick-find"));
     });
     function getSelectedValue(id) {
         return $("#" + id).find("dt a span.value").html();
@@ -228,8 +229,26 @@ $(function () {
         if (!$clicked.parents().hasClass("quick-find-tag"))
             $(".quick-find-tag dd ul").hide();
     });
-    $("#flagSwitcher").click(function () {
-        $(".quick-find-tag img.flag").toggleClass("flagvisibility");
+});
+//
+$(function () {
+    $(".quick-find-by-alpha dt a").click(function () {
+        $(".quick-find-by-alpha dd ul").toggle();
+    });
+    $(".quick-find-by-alpha dd ul li a").click(function () {
+        var text = $(this).html();
+        $(".quick-find-by-alpha dt a span").html(text);
+        $(".quick-find-by-alpha dd ul").hide();
+       /// $("#result").html("Selected value is: " + getSelectedValue("by-alpha-quick-find"));
+    });
+    //
+    function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+    }
+    $(document).bind('click', function (e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("quick-find-by-alpha"))
+            $(".quick-find-by-alpha dd ul").hide();
     });
 });
 // Carousel
