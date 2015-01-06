@@ -208,6 +208,30 @@ $(function () {
         $(".popover").hide();
     });
 });
+//
+$(function () {
+    $(".quick-find-tag img.flag").addClass("flagvisibility");
+    $(".quick-find-tag dt a").click(function () {
+        $(".quick-find-tag dd ul").toggle();
+    });
+    $(".quick-find-tag dd ul li a").click(function () {
+        var text = $(this).html();
+        $(".quick-find-tag dt a span").html(text);
+        $(".quick-find-tag dd ul").hide();
+       /// $("#result").html("Selected value is: " + getSelectedValue("sample"));
+    });
+    function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+    }
+    $(document).bind('click', function (e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("quick-find-tag"))
+            $(".quick-find-tag dd ul").hide();
+    });
+    $("#flagSwitcher").click(function () {
+        $(".quick-find-tag img.flag").toggleClass("flagvisibility");
+    });
+});
 // Carousel
 $(function () {
     // $('#home-image-slide-modal-0').modalPopover('show');

@@ -66,22 +66,72 @@
 				    <li><a href="#"><img src="images/buttons/home/nav/x.png"><br><small class="menu-color-white memu-font-size">Logout</small></a></li>               
 				</ul>
 			</div>
-            <div id="popupBottom" class="popover">
+            <div id="popupBottom" class="popover show">
 				<div class="arrow"></div>
 				<div class="popover-title">
 					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-lg-8 pull-left popover-title-text-width">left</div>
+						<div class="col-xs-12 col-sm-6 col-lg-8 pull-left popover-title-text-width">
+                                                    <span class="header-idata-colored-upercased header-font-size" > widget quick finder</span>
+                                                </div>
 						<div class="col-xs-6 col-lg-4 pull-right popover-title-close-button-width popover-title-right-button-pos" id="close-search-box"> 
 							<img id="close-search-box" src="images/buttons/home/popover/close.png" alt="close" />
 						</div>
 					</div>        
 				</div>
 				<div class="popover-content">
-					<p>Sed posuere consectetur est at lobortis. Aenean
-						eu leo quam. Pellentesque ornare sem lacinia
-						quam venenatis vestibulum.
-						<a href="#" class="btn helloWorld">Click me</a>
-					</p>
+                                    <ul class="quick-finder-content" style="display: block; z-index: 1060">
+                                        <li><span class="quick-find-tag-title"> Find Widget by tag...</span></li>
+                                        <li>
+                                            <div class="row zeropadding">
+                                                <div class="col-xs-12 col-md-9 zeropadding" style="height:30px">
+                                                    <dl id="by-tag-quick-find" class="quick-find-tag find-by-tag">
+                                                        <dt><a href="#"><span style="padding-left: 5px">select</span></a></dt>
+                                                        <dd>
+                                                            <ul class="select-item">
+                                                                <li><a href="#">Brazil<span class="value">BR</span></a></li>
+                                                                <li><a href="#">France<span class="value">FR</span></a></li>
+                                                                <li><a href="#">Germany<span class="value">DE</span></a></li>
+                                                                <li><a href="#">India<span class="value">IN</span></a></li>
+                                                                <li><a href="#">Japan<span class="value">JP</span></a></li>
+                                                                <li><a href="#">Serbia<span class="value">CS</span></a></li>
+                                                                <li><a href="#">United Kingdom<span class="value">UK</span></a></li>
+                                                                <li><a href="#">United States<span class="value">US</span></a></li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                          
+                                                </div>
+                                                <div class="col-xs-6 col-md-3 zeropadding">
+                                                Find
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li> <span class="quick-find-tag-title"> --or in alphabetical order</span></li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-9 zeropadding">
+                                                     <dl id="by-tag-quick-find" class="quick-find-tag find-by-alpha">
+                                                        <dt><a href="#"><span style="padding-left: 5px">select</span></a></dt>
+                                                        <dd>
+                                                            <ul class="select-item">
+                                                                <li><a href="#">Brazil<span class="value">BR</span></a></li>
+                                                                <li><a href="#">France<span class="value">FR</span></a></li>
+                                                                <li><a href="#">Germany<span class="value">DE</span></a></li>
+                                                                <li><a href="#">India<span class="value">IN</span></a></li>
+                                                                <li><a href="#">Japan<span class="value">JP</span></a></li>
+                                                                <li><a href="#">Serbia<span class="value">CS</span></a></li>
+                                                                <li><a href="#">United Kingdom<span class="value">UK</span></a></li>
+                                                                <li><a href="#">United States<span class="value">US</span></a></li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="col-xs-6 col-md-3 zeropadding">
+                                                    Find
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
 				</div>
 			</div>
 		</div> 

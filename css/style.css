@@ -1574,9 +1574,6 @@ img{
         top:80%;
         background-color:inherit; 
     }
-      .homeskybg{
-   background-position: -40%;
-} 
 }
 li.active-menu-list:after{
     content: url("../images/buttons/home/nav/header-polygon.png");
@@ -1649,6 +1646,13 @@ img.logo{
 }
 .menu-color-idata{
     color: #32CD32;
+}
+.header-idata-colored-upercased{
+   color: #32CD32;
+   text-transform: uppercase;
+}
+.header-font-size{
+    font-size: 15px;
 }
 .memu-font-size{
     font-size: 11px;
@@ -1735,15 +1739,29 @@ ul.carousel-inner li{
     height:266px;
     list-style: none;
     display: table-cell;
-     padding: 0; 
+    padding: 0; 
     margin: 0;
-} 
-ul.carousel-inner>li.item > a >img{
-    height:266px;
-    width: 100%;
+    
+}
+ul.carousel-inner>li.item{
+   width: 100%;
+}
+.item-content{
+   left: 0px;
+   width: 50%;
+   border: 1px solid blue;
+   height:266px;
+}
+.item-content-popover{
+   left: 0px;
+   width: 100%;
+   border: 1px solid blue;
+   height: 350px;
+   margin: 0px;
+   padding: 0px
 }
  #idms-widget-carousel > .col-md-4 {
-    width: 49.33333333%;
+    width: 50%;
     padding: 0px !important;
     margin-left: 25%;
 }
@@ -1765,9 +1783,9 @@ ul.carousel-inner>li.item > a >img{
   right: 50%;
   margin-right: -10px;
 }
-#idms-slide-left > img,
-#idms-slide-right > img{
-    
+*div,*ul,*li{
+    margin: 0 !important;
+    padding: 0 !important;
 }
 .idms-slide-popover {
   position: absolute;
@@ -1776,10 +1794,6 @@ ul.carousel-inner>li.item > a >img{
   z-index: 1060;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857143;
   text-align: left;
   background-color: #ffffff;
   -webkit-background-clip: padding-box;
@@ -1793,8 +1807,8 @@ ul.carousel-inner>li.item > a >img{
 }
 #idms-widget-carousel > .idms-slide-popover{
     max-width: 50%;
-    max-height: 90%;
-    height: 300px;
+    max-height: 100%;
+    height: 350px;
 }
  #idms-widget-carousel > .idms-slide-popover >img{
     height: 350px;
@@ -1828,5 +1842,105 @@ ul.carousel-inner>li.item > a >img{
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-
-
+@media (max-width: 768px) {
+   .carousel-indicators li {
+    width: 114px;
+    max-width: 121px;
+    height: 5px;
+    background: url('../images/carousel/indicators/home_carousel_indicator_inactive.png');  
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0px;
+}
+.carousel-indicators .active {
+    width: 114px;
+    max-width: 121px;
+    height: 5px;
+    margin: 0;
+    background: url('../images/carousel/indicators/Home_carousel_indicator_active.png'); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+}
+ul.quick-finder-content
+{
+    width: 92%;
+    padding: 0;
+    margin-left: 20px;
+    list-style-type: none;
+    color: white;
+}
+ul.quick-finder-content li
+{
+    list-style: none;
+    display: block;
+    margin-top: 10px;
+}
+ul.select-item li{
+    margin-top: 0px;
+    z-index: 1060
+}
+.zeropadding{
+    padding: 0;
+}
+.quick-find-tag dd, 
+.quick-find-tag dt, 
+.quick-find-tag ul { 
+    margin:0px; 
+    padding:0px;
+    border-radius: 1px;
+}
+.quick-find-tag dt{ 
+    border: 1px solid #84898D;
+}
+.quick-find-tag dd { 
+    position:relative; 
+}
+.quick-find-tag a { 
+    color:#9DA0A4; 
+    text-decoration:none; 
+    outline:none;
+}
+.quick-find-tag dt a {
+    background:#475158 url('../images/arrow.png') no-repeat scroll; 
+    background-position: 97% 10px;
+    display:block; 
+    padding-right: 20px;
+    width:100%;
+}
+.quick-find-tag dt a span {
+    cursor:pointer; 
+    display:block; 
+    padding:5px;
+}
+.quick-find-tag dd ul { 
+    background:#475158 none repeat scroll 0 0; 
+    color:#9DA0A4; 
+    display:none;
+    left:0px; 
+    padding:5px 0px; 
+    position:absolute; 
+    top:2px;
+    width:100%; 
+    list-style:none;
+}
+.quick-find-tag span.value { display:none;}
+.quick-find-tag dd ul li a { 
+    padding:5px; display:block;
+    z-index: 1060;
+}
+.quick-find-tag-title{
+    padding: 5px 0 4px 5px;
+}
+#popupBottom.popover{
+    height: auto;
+    overflow: visible;
+}
+#popupBottom >.popover-content{
+    height: auto;
+    overflow: visible;
+}
+#by-tag-quick-find{
+ width: 100%;   
+}
