@@ -66,7 +66,7 @@
 				    <li><a href="#"><img src="images/buttons/home/nav/x.png"><br><small class="menu-color-white memu-font-size">Logout</small></a></li>               
 				</ul>
 			</div>
-            <div id="popupBottom" class="popover show">
+            <div id="popupBottom" class="popover ">
 				<div class="arrow"></div>
 				<div class="popover-title">
 					<div class="row">
